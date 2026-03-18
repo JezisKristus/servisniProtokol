@@ -1,7 +1,7 @@
 namespace servisniProtokol;
     public partial class Form1 : Form
     {
-        public ServiceProtocol ServiceProtocol { get; set; } = new ServiceProtocol();
+        private ServiceProtocol ServiceProtocol { get; set; } = new ServiceProtocol(); /// problémy v serializaci or smt
 
         public Form1()
         {
@@ -10,7 +10,8 @@ namespace servisniProtokol;
 
         private void basicEdit_btn_Click(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+            new BasicEditForm().ShowDialog();
+            
         }
 
         private void CustomerEdit_btn_Click(object sender, EventArgs e)
@@ -23,5 +24,8 @@ namespace servisniProtokol;
             throw new System.NotImplementedException();
         }
 
-        private void Save_btn_Click(object sender, EventArgs e) => throw new System.NotImplementedException();
+        private void Save_btn_Click(object sender, EventArgs e)
+        { 
+            throw new System.NotImplementedException();
+        }
     }
